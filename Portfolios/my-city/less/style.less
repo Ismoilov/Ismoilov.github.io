@@ -1,0 +1,27 @@
+*:focus {
+  outline: none;
+}
+
+@import "./params/mix.less";
+@import "./params/vars.less";
+@import "features.less";
+
+header {
+  @import "navbar.less";
+  @import "main-header.less";
+  @import "animations.less";
+  @import "weather.less";
+}
+
+main{
+  background: @bg;
+  @import "categories.less";
+  @import "advert.less";
+  @import "top.less";
+  @import "advert-2.less";
+  @import "services.less";
+}
+
+footer{
+  @import "footer.less";
+}

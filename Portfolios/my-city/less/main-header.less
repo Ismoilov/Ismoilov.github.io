@@ -1,0 +1,263 @@
+.main-header {
+  margin-top: 85px;
+  position: relative;
+  padding-bottom: 250px;
+  background-image: linear-gradient(to right, #C5F8FF, #ffffff, #C5F8FF);
+  width: 100%;
+  overflow: hidden;
+
+  .container {
+    h1 {
+      font-family: 'mm';
+      font-size: 30px;
+      color: @b;
+    }
+
+    img {
+      z-index: 9;
+    }
+
+    form {
+      .cities {
+        width: 350px;
+
+        .label {
+          font-family: 'mm';
+          font-size: 14px;
+          color: @border;
+        }
+
+        a {
+          font-family: 'mm';
+          font-size: 14px;
+          display: block;
+          padding: .375rem .75rem;
+          border: 1px solid @border;
+          border-radius: 26px;
+          color: #78909C;
+          background: #ffffff;
+          position: relative;
+
+          img {
+            margin-right: 15px;
+          }
+
+          i {
+            // padding-left: 210px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+          }
+        }
+
+      }
+
+      .search {
+        width: 350px;
+        position: relative;
+
+        input {
+          border: 1px solid @border  !important;
+          border-radius: 26px !important;
+          padding-left: 40px;
+          color: #78909C;
+          font-family: 'mm';
+          font-size: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        img {
+          position: absolute;
+          top: 42px;
+          left: 15px;
+        }
+
+        .label {
+          .cities .label();
+        }
+      }
+
+      .btn {
+        width: 175px;
+        margin: 0 auto;
+        border-radius: 26px;
+        background: linear-gradient(90deg, #a100fe 0%, #d515c8 100%);
+        font-family: 'mm';
+        font-size: 16px;
+        text-transform: none;
+        height: 45px;
+        padding: 0;
+        img {
+          padding-left: 5px;
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          img {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 0;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+  }
+
+  .bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  .cloud-1 {
+    position: absolute;
+    animation: cloud-1 50s linear infinite;
+    top: 100px;
+    left: 200px;
+    z-index: 1;
+  }
+
+  .cloud-2 {
+    .cloud-1();
+    animation-duration: 100s;
+    left: 0;
+    top: 190px;
+  }
+
+  .cloud-3 {
+    position: absolute;
+    animation: cloud-3 100s linear infinite reverse;
+    transform: scale(0.8);
+    top: 150px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .cloud-4 {
+    .cloud-3();
+    animation-duration: 50s;
+    transform: scale(1);
+    top: 250px;
+    right: 200px;
+  }
+
+  .birds {
+    position: absolute;
+    left: 60%;
+    top: 150px;
+  }
+
+  .plane {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    animation: plane 60s linear infinite;
+  }
+
+  .man {
+    position: absolute;
+    top: 65%;
+    right: 55px;
+  }
+
+  .carousel {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    animation: carousel 30s linear infinite;
+    z-index: 99;
+  }
+
+  .city-bg {
+    animation: city 50s linear infinite reverse;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .city {
+    animation: city 50s linear infinite;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .main-header {
+
+    .container {
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    margin-top: 76px;
+    padding-bottom: 150px;
+
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right,
+    .carousel,
+    .man {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main-header {
+    margin-top: 76px;
+    padding-bottom: 150px;
+
+    .container {
+      form {
+        .inputs {
+          flex-flow: column;
+          .cities {
+            max-width: 250px;
+            margin-right: 0 !important;
+            .label {
+              display: block;
+              text-align: center;
+            }
+          }
+
+          .search {
+            max-width: 250px;
+            margin-left: 0 !important;
+            img{
+              top: 38px;
+            }
+            .label{
+              .cities .label();
+            }
+          }
+        }
+      }
+    }
+  }
+}

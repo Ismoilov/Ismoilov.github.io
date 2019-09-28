@@ -1,0 +1,51 @@
+// -----------Variables------------
+@sizes: {
+  mobile: 320px;
+  tablet: 768px;
+  desktop: 1024px;
+}
+
+// @media (min-width: @sizes[tablet]) {
+//   display: inline-block;
+// }
+
+// Width variables (appears count calculates by raw css)
+@width0: 30px; // Appears 3 times
+@width1: 100%; // Appears 3 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 20px; // Appears 3 times
+@height1: 3px; // Appears 3 times
+
+
+@lb: #CDDDEC;
+@w: #FFFFFF;
+@b:#0096DB;
+@bg:#EDF5FC;
+@shadow:#1182CF;
+@border:#ACC3D8;
+@rateColor_1: #ccc;
+@rateColor_3: #94DF5A;
+@rateColor_2: lighten(#94DF5A, 10%);
+@footer:#78909C;
+
+@font-face {
+  font-family: 'mm';
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'msb';
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'mb';
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+.font (@font-family; @font-size; @color) {
+  font-family: @font-family;
+  font-size: @font-size;
+  color: @color;
+}

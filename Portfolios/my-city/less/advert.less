@@ -1,0 +1,132 @@
+.advert {
+  margin-top: 50px;
+  position: relative;
+
+  &-bg {
+    background-image: url('../img/advert/illustrator.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    &-content {
+      max-width: 290px;
+      padding: 30px;
+      z-index: 9;
+      position: relative;
+      h1 {
+        font-family: 'mb';
+        font-size: 40px;
+        color: white;
+      }
+
+      .btn {
+        width: 175px;
+        border-radius: 26px;
+        background: linear-gradient(90deg, #a100fe 0%, #d515c8 100%);
+        font-family: 'mm';
+        font-size: 16px;
+        text-transform: none;
+        height: 45px;
+        padding: 0;
+
+        img {
+          padding-left: 5px;
+          transition: all 0.4s ease;
+        }
+
+        &:hover {
+          img {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+
+    .sphere-top-left {
+      position: absolute;
+      top: -80px;
+      left: -190px;
+    }
+
+    .sphere-center-bottom {
+      position: absolute;
+      bottom: -190px;
+      left: 160px;
+    }
+
+    .sphere-center-top {
+      position: absolute;
+      top: -50px;
+      left: 425px;
+    }
+
+    .sphere-right {
+      position: absolute;
+      top: 0;
+      right: -160px
+    }
+
+    .phone {
+      position: absolute; 
+      top: 20px;
+      left: 225px;
+    }
+    
+    .laptop {
+      position: absolute;
+      top: -90px;
+      left: 400px;
+    }
+  }
+}
+
+@media (max-width:992px){
+  .advert {
+    &-bg {
+      height: auto;
+      &-content {
+        h1 {
+          font-size: 30px;
+        }
+  
+        .btn {
+          font-size: 15px;
+        }
+      }
+      
+      .laptop{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width:768px){
+  .advert {
+    &-bg {
+      &-content {
+        h1 {
+          font-size: 25px;
+        }
+  
+        .btn {
+          font-size: 12px;
+          height: 40px;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:768px){
+  .advert {
+    &-bg {
+      .phone{
+        left: 100px;
+      }
+    }
+  }
+}

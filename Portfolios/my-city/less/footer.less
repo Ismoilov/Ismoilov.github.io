@@ -1,0 +1,152 @@
+.logo {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: -45px;
+    content: " ";
+    width: 1px;
+    height: 70px;
+    background-color: #CDDDEC;
+  }
+}
+
+.footer-links {
+  .logo();
+
+  &::after {
+    right: -30px;
+  }
+
+  ul {
+    li {
+      list-style: none;
+
+      a {
+        .font('mm';
+        12px;
+        @footer);
+      }
+    }
+  }
+}
+
+.social {
+  .logo();
+
+  &::after {
+    right: -30px;
+  }
+
+  h5 {
+    .font('mm';
+    14px;
+    @footer);
+  }
+
+  ul {
+    display: flex;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding-right: 10px;
+
+      a {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        display: block;
+        background: @footer;
+
+        i {
+          color: white;
+        }
+
+        &:hover {
+          background: linear-gradient(to right, #A100FE, #D515C8);
+        }
+      }
+    }
+  }
+}
+
+.download {
+  h5 {
+    .font('mm';
+    14px;
+    @footer);
+  }
+
+  a {
+    &:nth-child(2) {
+      img {
+        &:hover {
+          background-image: url('../img/app\ store-gradient.svg');
+          padding: 37px 130.5px 0 0;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      img {
+        &:hover {
+          background-image: url('../img/google-gradiend.svg');
+          padding: 37px 130.8px 0 0;
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1200px) {
+  .logo {
+    &::after {
+      right: -10px;
+    }
+  }
+
+  .footer-links {
+    .logo();
+
+    ul {
+      &:nth-child(1) {
+        padding-left: 0;
+      }
+
+      &:nth-child(2) {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .social {
+    .logo();
+  }
+}
+
+@media(max-width:992px) {
+  .container {
+    flex-flow: column;
+    align-items: center;
+
+    .logo {
+      &::after {
+        display: none;
+      }
+    }
+    .footer-links{
+      .logo();
+    }
+    .social{
+      .logo();
+    }
+  }
+}
