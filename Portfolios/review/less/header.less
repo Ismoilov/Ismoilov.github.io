@@ -1,0 +1,397 @@
+.topBar {
+  background-color: #222222;
+  font-family: 'Montserrat-Medium';
+  font-size: 13px;
+
+
+  .topBar-data {
+    display: flex;
+    justify-content: space-between;
+
+    .topBar-heading {
+      position: relative;
+
+      ul {
+
+        list-style: none;
+        color: white;
+        display: flex;
+        margin: 10PX 0;
+
+
+        li {
+          &:first-child {
+            color: #DB0000;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -30PX;
+        top: 10px;
+        width: 1px;
+        height: 20px;
+        background-image: linear-gradient(rgb(68, 68, 68));
+      }
+    }
+
+    .options-box {
+      position: relative;
+
+      ul {
+        margin: 10PX 0;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          .fa-eye {
+            color: #DB0000;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -30px;
+        top: 10px;
+        width: 1px;
+        height: 20px;
+        background-image: linear-gradient(rgb(68, 68, 68));
+      }
+    }
+
+    .language-box {
+      ul {
+
+        list-style: none;
+        display: flex;
+        margin: 10PX 0;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .active {
+          a {
+            color: red;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.header-main {
+  padding: 35px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    position: relative;
+
+    ul {
+      list-style: none;
+      font-size: 12px;
+      margin-top: -2px;
+      margin-left: 5px;
+      text-transform: uppercase;
+      color: #7A7A7A;
+
+      li {
+        font-family: 'Montserrat-Medium';
+
+        &:nth-child(2) {
+          color: #DB0000;
+          font-family: 'Montserrat-ExtraBold';
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: -10px;
+      width: 1px;
+      height: 60px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .money {
+    position: relative;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+        padding-right: 15px;
+
+        span {
+          color: #7A7A7A;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: -10px;
+      width: 1px;
+      height: 60px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .registration {
+    position: relative;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      .hide {
+        display: none;
+      }
+
+      .hide1 {
+        display: none;
+        padding-right: 10px;
+      }
+
+      .r1 {
+        display: inline;
+        width: 235px;
+
+        input {
+          padding: 0;
+        }
+      }
+
+      li {
+
+        a {
+          font-family: 'Montserrat-Medium';
+          font-size: 14px;
+
+          svg {
+            color: red;
+          }
+
+          span {
+            color: #7A7A7A;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &:nth-child(1),
+        :nth-child(2) {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+//--------------Navbar-----------------------
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 2 times
+
+.navigation {
+  position: relative;
+
+  .navbar {
+    background-color: transparent;
+    border-radius: 0;
+    transition: all 0.25s ease;
+    padding: 0;
+
+    .navbar-brand {
+      display: none;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-between;
+
+      .nav-item {
+        display: inline-block;
+
+        .dropdown-menu {
+
+          .dropdown-item {
+
+            &:hover {
+              color: #DB0000;
+            }
+          }
+        }
+
+        .nav-link {
+          font-size: 14px;
+          position: relative;
+          display: inline-block;
+          font-family: "Montserrat-Medium";
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            margin: auto;
+            background-color: red;
+            transition: width 250ms ease-in-out;
+          }
+
+          &:hover {
+            color: red;
+
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 30px;
+  }
+}
+
+.affix {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+  background-color: #ffffff;
+}
+
+
+
+// -------------Media 768px-------------------
+.media-block( {
+
+  .navigation {
+    .navbar-brand {
+      display: block !important;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+, 768px);
+
+// -------------Media 992px-------------------
+.media-block( {
+
+  .topBar, .middle {
+    display: none;
+  }
+
+  .navigation {
+    .navbar {
+      .navbar-nav {
+        .nav-link {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+, 992px);
+
+// -------------Media 1200px------------------
+.media-block( {
+  .topBar {
+    font-size: 11px;
+  }
+
+  .header-main {
+
+    .logo {
+
+      a {
+        img {
+          width: 150px;
+        }
+      }
+
+      ul {
+        li {
+          font-size: 11px;
+        }
+      }
+
+      &::after {
+        right: -30px;
+      }
+    }
+
+    .money {
+
+      ul {
+
+        li {
+          font-size: 12px;
+        }
+      }
+
+      &::after {
+        right: -30px;
+      }
+    }
+
+    .registration {
+      position: relative;
+
+      ul {
+
+        li {
+
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+, 1200px);

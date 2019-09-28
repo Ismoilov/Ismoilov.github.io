@@ -1,0 +1,168 @@
+.sidebar {
+  .sidebar-heading {
+    text-align: center;
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+  }
+
+  .sidebar-button {
+    background-color: @red;
+    color: white;
+    margin-top: 15px;
+    font-family: 'Montserrat-medium';
+    font-size: 14px;
+  }
+
+  .sidebar-magazine {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+
+    .magazine {
+
+      .magazine-img {
+        height: 290px;
+        margin-top: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        color: @gray;
+        margin-top: 15px;
+      }
+    }
+
+    hr {
+      margin-top: 30px;
+    }
+
+    .sidebar-news {
+      .sidebar-heading {
+        margin-top: 20px;
+      }
+
+      .card {
+        margin-top: 20px;
+        margin-bottom: 0;
+        border: none;
+        height: 240px;
+
+        .news-img {
+          height: 145px;
+
+          img {
+            border-radius: 5px;
+          }
+        }
+
+        .card-body {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .sidebar-popular {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    .card-body {
+      padding: 10px;
+
+      a {
+        h5 {
+          font-family: 'Montserrat-Medium';
+        }
+      }
+    }
+  }
+
+  .sidebar-infographic {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    .card {
+      border: none;
+      margin-bottom: 0;
+
+      .news-img {
+        height: 190px;
+
+        img {
+          border-radius: none;
+        }
+      }
+
+      .card-body {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .sidebar-wheather {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+
+    .dropdown {
+      text-align: center;
+
+      button {
+        background-color: unset;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .wheather-img {
+      height: 90px;
+
+      img {
+        height: 100%;
+        object-fit: none;
+      }
+    }
+
+    p {
+      font-family: 'Montserrat-Medium';
+      font-size: 14px;
+      color: @gray;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-family: 'Montserrat-Medium';
+        font-size: 20px;
+        color: @gray;
+
+        &:nth-child(2) {
+          font-size: 15px;
+          color: unset;
+        }
+      }
+    }
+  }
+}
+
+.media-block( {
+    .sidebar{
+        display: none;
+    }
+  }
+  , 992px);
