@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02de19e4.chunk.css",
+    "main.js": "/static/js/main.d4da1c4b.chunk.js",
+    "main.js.map": "/static/js/main.d4da1c4b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b835e79a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b835e79a.js.map",
+    "static/css/2.956938e7.chunk.css": "/static/css/2.956938e7.chunk.css",
+    "static/js/2.896a5b72.chunk.js": "/static/js/2.896a5b72.chunk.js",
+    "static/js/2.896a5b72.chunk.js.map": "/static/js/2.896a5b72.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bad9bf835f78f51b6fa8190f861b05a8.js": "/precache-manifest.bad9bf835f78f51b6fa8190f861b05a8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.956938e7.chunk.css.map": "/static/css/2.956938e7.chunk.css.map",
+    "static/css/main.02de19e4.chunk.css.map": "/static/css/main.02de19e4.chunk.css.map",
+    "static/js/2.896a5b72.chunk.js.LICENSE.txt": "/static/js/2.896a5b72.chunk.js.LICENSE.txt",
+    "static/media/Logo.svg": "/static/media/Logo.bfc5c27b.svg",
+    "static/media/LogoLoader.svg": "/static/media/LogoLoader.7641109f.svg",
+    "static/media/allNews.jpg": "/static/media/allNews.8116545e.jpg",
+    "static/media/gallery.png": "/static/media/gallery.d0945b02.png",
+    "static/media/header-parallax.jpg": "/static/media/header-parallax.d7b1e3b3.jpg",
+    "static/media/like.svg": "/static/media/like.7f1aaa01.svg",
+    "static/media/manyRead.png": "/static/media/manyRead.2e3e9a6c.png",
+    "static/media/photo.svg": "/static/media/photo.a6d423f0.svg",
+    "static/media/programs1.png": "/static/media/programs1.4805f1da.png",
+    "static/media/Slider.scss": "/static/media/right-arrow.80a2860d.svg",
+    "static/media/slider1.png": "/static/media/slider1.4e894712.png",
+    "static/media/small-1.png": "/static/media/small-1.6100bdaf.png",
+    "static/media/small-2.png": "/static/media/small-2.67f962ff.png",
+    "static/media/teleshows.jpg": "/static/media/teleshows.5a502f70.jpg",
+    "static/media/travel_1.png": "/static/media/travel_1.99f7333c.png",
+    "static/media/travels-2.jpg": "/static/media/travels-2.50fab4f7.jpg",
+    "static/media/Travels.module.scss": "/static/media/travelsBg.b849f48b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b835e79a.js",
+    "static/css/2.956938e7.chunk.css",
+    "static/js/2.896a5b72.chunk.js",
+    "static/css/main.02de19e4.chunk.css",
+    "static/js/main.d4da1c4b.chunk.js"
+  ]
+}
