@@ -2,10 +2,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
-  nitro: {
-    preset: 'github-pages',
-  },
-
   css: ['~/assets/css/main.css'],
 
   app: {
@@ -25,3 +21,7 @@ export default defineNuxtConfig({
     }
   }
 })
+function defineNuxtConfig(arg0: { compatibilityDate: string; devtools: { enabled: boolean; }; css: string[]; app: { head: { title: string; meta: { name: string; content: string; }[]; link: ({ rel: string; href: string; } | { rel: string; href: string; crossorigin: string; })[]; }; }; }) {
+  throw new Error("Function not implemented.");
+}
+
