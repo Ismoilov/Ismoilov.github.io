@@ -78,6 +78,7 @@
           v-for="project in projects"
           :key="project.name"
           :project="project"
+          :class="{ featured: project.featured }"
         />
       </div>
     </section>

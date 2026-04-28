@@ -4,6 +4,7 @@ export interface Project {
   tags: string[]
   url: string
   label: string
+  image: string
   year: string
   type: string
   featured: boolean
@@ -17,14 +18,26 @@ export interface SkillGroup {
 export const usePortfolioData = () => {
   const projects: Project[] = [
     {
+      name: 'Easton.uz',
+      desc: 'Corporate website for Easton, featuring a modern design with clean layouts and strong brand presentation.',
+      tags: ['HTML', 'CSS', 'JS', 'React', 'Next.js'],
+      url: 'https://easton.uz',
+      label: 'Easton corporate site',
+      image: '/images/projects/easton.jpg',
+      year: '2024',
+      type: 'Corporate Website',
+      featured: true,
+    },
+    {
       name: 'Solar',
       desc: 'A modern energy company website with clean section layouts, strong typography, and a bold visual hierarchy designed for trust and conversion.',
       tags: ['HTML', 'CSS', 'Bootstrap'],
       url: 'https://ismoilov.github.io/Portfolios/Solar/index.html',
       label: 'Solar energy\ncompany website',
+      image: '/images/projects/solar.jpg',
       year: '2024',
       type: 'Corporate Website',
-      featured: true,
+      featured: false,
     },
     {
       name: 'Review.uz',
@@ -32,6 +45,7 @@ export const usePortfolioData = () => {
       tags: ['HTML', 'CSS', 'JS'],
       url: 'https://ismoilov.github.io/Portfolios/review/index.html',
       label: 'Review platform',
+      image: '/images/projects/review.jpg',
       year: '2023',
       type: 'Web Platform',
       featured: false,
@@ -42,6 +56,7 @@ export const usePortfolioData = () => {
       tags: ['Bootstrap', 'JS'],
       url: 'https://ismoilov.github.io/Portfolios/rgsbm/index.html',
       label: 'Institutional site',
+      image: '/images/projects/rgsbm.jpg',
       year: '2023',
       type: 'Institutional Site',
       featured: false,
@@ -52,6 +67,7 @@ export const usePortfolioData = () => {
       tags: ['HTML', 'CSS', 'JS'],
       url: 'https://ismoilov.github.io/Portfolios/my-city/index.html',
       label: 'City info portal',
+      image: '/images/projects/my-city.jpg',
       year: '2023',
       type: 'City Portal',
       featured: false,
@@ -62,6 +78,7 @@ export const usePortfolioData = () => {
       tags: ['HTML', 'Bootstrap'],
       url: 'https://ismoilov.github.io/Portfolios/redmond/index.html',
       label: 'E-commerce page',
+      image: '/images/projects/redmond.jpg',
       year: '2022',
       type: 'E-Commerce',
       featured: false,
@@ -74,12 +91,14 @@ export const usePortfolioData = () => {
     { label: 'Backend', pills: ['Node.js', 'Express.js', 'Nest.js', 'REST API'] },
     { label: 'Tools', pills: ['Git', 'Figma'] },
     { label: 'Telegram', pills: ['Telegram Bots', 'Mini Apps'] },
+    { label: 'AI', pills: ['OpenAI API', 'Claude API', 'LangChain', 'Prompt Engineering'] },
   ]
 
   const marqueeItems = [
     'HTML', 'CSS', 'JavaScript', 'React', 'Vue.js', 'Nuxt.js', 'Next.js',
     'Node.js', 'Express.js', 'Nest.js', 'REST API', 'Git', 'Full-Stack',
     'TypeScript', 'Web Performance', 'Telegram Bots', 'Mini Apps',
+    'OpenAI API', 'Claude API', 'LangChain', 'Prompt Engineering', 'AI Integration',
   ]
 
   return { projects, skillGroups, marqueeItems }

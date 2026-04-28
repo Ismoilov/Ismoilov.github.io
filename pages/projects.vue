@@ -12,7 +12,7 @@
     </div>
 
     <!-- Filters -->
-    <div class="filters">
+    <!-- <div class="filters">
       <span class="filter-label">Filter</span>
       <button
         v-for="f in filters"
@@ -23,7 +23,7 @@
       >
         {{ f.label }}
       </button>
-    </div>
+    </div> -->
 
     <!-- Projects Grid -->
     <div class="projects-section">
@@ -35,10 +35,7 @@
           :class="{ featured: project.featured && activeFilter === 'all' }"
         >
           <a :href="project.url" target="_blank" rel="noopener" class="project-thumb">
-            <div class="project-thumb-inner">
-              <div class="project-thumb-num">0{{ i + 1 }}</div>
-              <div class="project-thumb-name">{{ project.name }}</div>
-            </div>
+            <img :src="project.image" :alt="project.name" class="project-thumb-img" />
           </a>
           <div class="project-body">
             <div class="project-meta">
@@ -203,41 +200,17 @@ const filteredProjects = computed(() => {
   background: var(--bg3);
 }
 
-.project-thumb-inner {
+.project-thumb-img {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--bg3) 0px,
-    var(--bg3) 8px,
-    rgba(255, 255, 255, 0.025) 8px,
-    rgba(255, 255, 255, 0.025) 16px
-  );
+  object-fit: cover;
+  object-position: top;
+  display: block;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-card:hover .project-thumb-inner {
+.project-card:hover .project-thumb-img {
   transform: scale(1.04);
-}
-
-.project-thumb-num {
-  font-family: var(--font-display);
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.06);
-  line-height: 1;
-}
-
-.project-thumb-name {
-  font-size: 0.72rem;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 .project-body {

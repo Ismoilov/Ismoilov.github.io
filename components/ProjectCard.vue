@@ -1,10 +1,7 @@
 <template>
   <div class="project-card">
     <a :href="project.url" target="_blank" rel="noopener" class="project-img">
-      <div class="project-img-inner">
-        <div class="project-img-icon">⬜</div>
-        <div class="project-img-label">{{ project.label }}</div>
-      </div>
+      <img :src="project.image" :alt="project.name" class="project-img-screenshot" />
     </a>
     <div class="project-info">
       <div class="project-tags">
@@ -50,41 +47,17 @@ defineProps<{ project: Project }>()
   position: relative;
 }
 
-.project-img-inner {
+.project-img-screenshot {
   width: 100%;
   height: 100%;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--bg3) 0px,
-    var(--bg3) 8px,
-    rgba(255, 255, 255, 0.025) 8px,
-    rgba(255, 255, 255, 0.025) 16px
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-card:hover .project-img-inner {
+.project-card:hover .project-img-screenshot {
   transform: scale(1.03);
-}
-
-.project-img-label {
-  font-family: monospace;
-  font-size: 0.7rem;
-  color: var(--muted);
-  text-align: center;
-  line-height: 1.5;
-  padding: 0 16px;
-  white-space: pre-line;
-}
-
-.project-img-icon {
-  font-size: 1.5rem;
-  opacity: 0.3;
 }
 
 .project-info {
