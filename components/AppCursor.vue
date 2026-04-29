@@ -1,7 +1,9 @@
 <template>
   <ClientOnly>
-    <div id="cursor-dot" :style="dotStyle" />
-    <div id="cursor-ring" :style="ringStyle" />
+    <template v-if="!isTouch">
+      <div id="cursor-dot" :style="dotStyle" />
+      <div id="cursor-ring" :style="ringStyle" />
+    </template>
   </ClientOnly>
 </template>
 
@@ -26,7 +28,12 @@ const ringStyle = computed(() => ({
   opacity: hasMoved.value ? '0.5' : '0',
 }))
 
+const isTouch = ref(false)
+
 onMounted(() => {
+  isTouch.value = window.matchMedia('(hover: none)').matches
+  if (isTouch.value) return
+
   document.addEventListener('mousemove', (e) => {
     if (!hasMoved.value) hasMoved.value = true
     mx.value = e.clientX

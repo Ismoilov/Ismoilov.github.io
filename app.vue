@@ -9,6 +9,7 @@
       <NuxtPage />
     </main>
     <AppFooter />
+    <ScrollToTop />
   </div>
 </template>
 

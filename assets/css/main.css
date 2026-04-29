@@ -33,8 +33,12 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
   width: 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
+  a, button { cursor: none; }
 }
 
 /* Nuxt root containers */
@@ -484,6 +488,7 @@ a {
 
   #hero {
     padding: 0 24px 56px;
+    justify-content: center;
   }
 
   /* Pull counter into normal flex flow as a horizontal stat row */

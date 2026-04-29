@@ -8,7 +8,7 @@
 
       <div class="hero-counter">
         <div class="hero-stat">
-          <div class="hero-stat-num">5<span>+</span></div>
+          <div class="hero-stat-num">6<span>+</span></div>
           <div class="hero-stat-label">Yrs Experience</div>
         </div>
         <div class="hero-stat">
